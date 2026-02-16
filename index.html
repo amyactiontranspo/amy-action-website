@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amy Action Transpo LLC | Dispatching</title>
+    <style>
+      :root{
+        --pink:#db2777;
+        --pink2:#fbcfe8;
+        --gray:#4b5563;
+        --bg:#fff;
+      }
+      body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        color:var(--gray);
+        background: linear-gradient(135deg, var(--pink2), #fff);
+      }
+      header{
+        padding:64px 18px;
+        text-align:center;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      h1{ font-size: 40px; margin: 0 0 14px; color:#374151; }
+      p{ font-size: 18px; line-height: 1.5; margin: 0 auto 22px; max-width: 760px; }
+      .btns{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+      a.btn{
+        display:inline-block;
+        padding:14px 18px;
+        border-radius:18px;
+        text-decoration:none;
+        font-weight:700;
+      }
+      a.primary{ background:var(--pink); color:white; }
+      a.secondary{ border:2px solid var(--pink); color:var(--pink); background:white; }
+      section{
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 22px 18px 50px;
+      }
+      .grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap:16px;
+      }
+      .card{
+        background:white;
+        border:1px solid #f3f4f6;
+        border-radius:18px;
+        padding:16px;
+        box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      }
+      .tag{ color:var(--pink); font-weight:800; }
+      .rate{
+        background: linear-gradient(90deg, var(--pink2), #fff, var(--pink2));
+        border: 2px solid #f9a8d4;
+      }
+      footer{
+        text-align:center;
+        padding:18px;
+        background:#fde7f2;
+      }
+      .contact{
+        background: linear-gradient(90deg, #db2777, #ec4899);
+        color:white;
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .contact a{ color:white; font-weight:800; text-decoration:none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Amy Action Transpo LLC</h1>
+      <p>
+        Reliable. Profitable. Stress-Free Dispatching. We help owner-operators and fleet owners maximize revenue,
+        reduce dead miles, and stay focused on the road while we handle negotiations and paperwork.
+      </p>
+      <div class="btns">
+        <a class="btn primary" target="_blank"
+           href="https://docs.google.com/forms/d/e/1FAIpQLScjF0rb0okwUIbWwG4xi7ZybMiCNmCbIunngmKIP2BRdQKPZQ/viewform">
+          Start Dispatching With Us
+        </a>
+        <a class="btn secondary" href="#rates">View Rates</a>
+      </div>
+    </header>
+
+    <section>
+      <h2 style="text-align:center; margin:0 0 16px;">How We Add Value</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="tag">Top-Paying Loads</div>
+          <p>We negotiate directly with brokers to secure competitive rates and consistent freight for your lanes.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Paperwork & Compliance</div>
+          <p>Rate confirmations, broker packets, invoices, and documentation handled professionally and on time.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Maximized Profit</div>
+          <p>Strategic load planning to minimize deadhead miles and increase your weekly revenue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rates">
+      <div class="card rate">
+        <h2 style="text-align:center; margin:0 0 10px;">Our Rates</h2>
+        <p style="text-align:center; margin:0 0 8px;"><strong>🔥 5% Limited Time Offer 🔥</strong></p>
+        <p style="text-align:center; margin:0;">
+          Limited time promotional rate for new carriers. No hidden fees. No long-term contracts. Just results-driven dispatching.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact">
+        <h2 style="margin:0 0 10px; text-align:center;">Let’s Grow Your Business</h2>
+        <p style="text-align:center; margin:0 0 6px;">Phone: <a href="tel:8064142861">806-414-2861</a></p>
+        <p style="text-align:center; margin:0;">Email: <a href="mailto:amyactiontranspollc@gmail.com">amyactiontranspollc@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Amy Action Transpo LLC. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
